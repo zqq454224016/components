@@ -71,6 +71,29 @@ entries:
     urls:
     - https://github.com/zqq454224016/components/releases/download/bc-explorer-v0.0.2/bc-explorer-v0.0.2.tgz
     version: v0.0.2
+  chartmuseum:
+  - apiVersion: v2
+    appVersion: 0.16.0
+    created: "2023-07-24T06:53:53.069512423Z"
+    description: Host your own Helm Chart Repository
+    digest: 6c7f3e0363bc098e542c1575fb33ee7ad116c6d1faef013aaaddce81d8eace28
+    home: https://github.com/helm/chartmuseum
+    icon: https://raw.githubusercontent.com/chartmuseum/charts/main/logo.jpg
+    keywords:
+    - chartmuseum
+    - helm
+    - charts repo
+    maintainers:
+    - name: chartmuseum
+      url: https://github.com/chartmuseum
+    name: chartmuseum
+    sources:
+    - https://github.com/chartmuseum/charts/tree/main/src/chartmuseum
+    - https://github.com/chartmuseum
+    - https://github.com/helm/chartmuseum
+    urls:
+    - https://github.com/zqq454224016/components/releases/download/chartmuseum-3.10.1/chartmuseum-3.10.1.tgz
+    version: 3.10.1
   cluster-component:
   - apiVersion: v2
     appVersion: 0.1.0
@@ -276,4 +299,4 @@ entries:
     urls:
     - https://github.com/zqq454224016/components/releases/download/weaviate-16.3.0/weaviate-16.3.0.tgz
     version: 16.3.0
-generated: "2023-07-24T06:08:34.358040151Z"
+generated: "2023-07-24T06:53:53.069521323Z"
