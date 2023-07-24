@@ -4,7 +4,7 @@ replicaCount: 1
 strategy:
   type: RollingUpdate
 image:
-  repository: ghcr.io/helm/chartmuseum
+  repository: ghcr.m.daocloud.io/helm/chartmuseum
   tag: v0.16.0
   pullPolicy: IfNotPresent
 secret:
