@@ -1,0 +1,279 @@
+apiVersion: v1
+entries:
+  bc-apis:
+  - apiVersion: v2
+    created: "2023-07-24T06:08:33.158181595Z"
+    description: bc-apis is a service that provides composited APIs for the console.
+    digest: 37ad4c4811ecf4f9b49a4815edade9fb94c189e299a82dc00d476e5d2f9b270d
+    icon: https://avatars.githubusercontent.com/u/85277200
+    keywords:
+    - apis
+    - bestchains
+    maintainers:
+    - name: bjwswang
+      url: https://github.com/bjwswang
+    - name: Carrotzpc
+      url: https://github.com/Carrotzpc
+    - name: dayuy
+      url: https://github.com/dayuy
+    name: bc-apis
+    sources:
+    - https://github.com/bestchains/bc-apis
+    type: application
+    urls:
+    - https://github.com/zqq454224016/components/releases/download/bc-apis-v0.0.1/bc-apis-v0.0.1.tgz
+    version: v0.0.1
+  bc-depository:
+  - apiVersion: v2
+    created: "2023-07-24T06:08:33.280090506Z"
+    description: bc-depository represents depository-as-a-service in bestchains which
+      provides quick way to create a depository service.
+    digest: 70165e2e3040caddb64cc4ec7bcfdd10f76ca7f5ad55c6ce4409d5e49d834c5e
+    icon: https://avatars.githubusercontent.com/u/116370569
+    keywords:
+    - depository
+    - saas
+    - bestchains
+    maintainers:
+    - name: bjwswang
+      url: https://github.com/bjwswang
+    - name: Abirdcfly
+      url: https://github.com/Abirdcfly
+    - name: 0xff-dev
+      url: https://github.com/0xff-dev
+    name: bc-depository
+    sources:
+    - https://github.com/bestchains/bc-saas
+    type: application
+    urls:
+    - https://github.com/zqq454224016/components/releases/download/bc-depository-v0.0.2/bc-depository-v0.0.2.tgz
+    version: v0.0.2
+  bc-explorer:
+  - apiVersion: v2
+    created: "2023-07-24T06:08:33.395571964Z"
+    description: a comprehensive blockchain explorer
+    digest: 740aca789625695ce4346d90c475a5c0d9d6bc90bba8898adf6a991ee0f62a89
+    icon: https://avatars.githubusercontent.com/u/116370569
+    keywords:
+    - explorer
+    - bestchains
+    maintainers:
+    - name: bjwswang
+      url: https://github.com/bjwswang
+    - name: Abirdcfly
+      url: https://github.com/Abirdcfly
+    - name: 0xff-dev
+      url: https://github.com/0xff-dev
+    name: bc-explorer
+    sources:
+    - https://github.com/bestchains/bc-explorer
+    type: application
+    urls:
+    - https://github.com/zqq454224016/components/releases/download/bc-explorer-v0.0.2/bc-explorer-v0.0.2.tgz
+    version: v0.0.2
+  cluster-component:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2023-07-24T06:08:33.547974429Z"
+    dependencies:
+    - condition: cert-manager.enabled
+      name: cert-manager
+      repository: ""
+      version: 0.1.0
+    - condition: metallb.enabled
+      name: metallb
+      repository: ""
+      version: 0.1.0
+    - condition: ingress-nginx.enabled
+      name: ingress-nginx
+      repository: ""
+      version: 4.2.5
+    - condition: openebs.enabled
+      name: openebs
+      repository: ""
+      version: 3.3.1
+    description: A Helm chart for cluster-component
+    digest: 6aab65b94901f5924f1e19d65d8762a0f88f0446a56a3d4ce4b27c42adda5247
+    maintainers:
+    - name: nkwangleiGIT
+      url: https://github.com/nkwangleiGIT
+    - name: bjwswang
+      url: https://github.com/bjwswang
+    - name: Abirdcfly
+      url: https://github.com/Abirdcfly
+    - name: 0xff-dev
+      url: https://github.com/0xff-dev
+    name: cluster-component
+    type: application
+    urls:
+    - https://github.com/zqq454224016/components/releases/download/cluster-component-0.1.1/cluster-component-0.1.1.tgz
+    version: 0.1.1
+  fabric-operator:
+  - apiVersion: v2
+    appVersion: v0.1.0
+    created: "2023-07-24T06:08:33.65053548Z"
+    description: fabric-operator is an open-source, cloud-native Operator for managing
+      Hyperledger Fabric networks on Kubernetes
+    digest: 397c7113ecaa21202a6409e09b43a913098d6f0e4f387945683185ffc2838a6e
+    icon: https://avatars.githubusercontent.com/u/116370569?s=200&v=4
+    keywords:
+    - chain
+    - operator
+    - fabric-operator
+    - bestchains
+    maintainers:
+    - name: nkwangleiGIT
+      url: https://github.com/nkwangleiGIT
+    - name: bjwswang
+      url: https://github.com/bjwswang
+    - name: Abirdcfly
+      url: https://github.com/Abirdcfly
+    - name: 0xff-dev
+      url: https://github.com/0xff-dev
+    name: fabric-operator
+    sources:
+    - https://github.com/bestchains/fabric-operator
+    type: application
+    urls:
+    - https://github.com/zqq454224016/components/releases/download/fabric-operator-0.1.0/fabric-operator-0.1.0.tgz
+    version: 0.1.0
+  ingress-nginx:
+  - annotations:
+      artifacthub.io/changes: |
+        - "helm: Fix opentelemetry module installation for daemonset (#9792)"
+        - "Update charts/* to keep project name display aligned (#9931)"
+        - "Update Ingress-Nginx version controller-v1.8.0"
+      artifacthub.io/prerelease: "false"
+    apiVersion: v2
+    appVersion: 1.8.0
+    created: "2023-07-24T06:08:33.759782987Z"
+    description: Ingress controller for Kubernetes using NGINX as a reverse proxy
+      and load balancer
+    digest: 191def3490f3cd0a036cb2478781937d995ddd9745dbbd06a90cd1e9594244f2
+    home: https://github.com/kubernetes/ingress-nginx
+    icon: https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nginx_logo.svg/500px-Nginx_logo.svg.png
+    keywords:
+    - ingress
+    - nginx
+    kubeVersion: '>=1.20.0-0'
+    maintainers:
+    - name: rikatz
+    - name: strongjz
+    - name: tao12345666333
+    name: ingress-nginx
+    sources:
+    - https://github.com/kubernetes/ingress-nginx
+    urls:
+    - https://github.com/zqq454224016/components/releases/download/ingress-nginx-4.7.0/ingress-nginx-4.7.0.tgz
+    version: 4.7.0
+  kubebb-core:
+  - apiVersion: v2
+    appVersion: v0.1.2
+    created: "2023-07-24T06:08:33.858462306Z"
+    description: Kubebb Core provides core implementations on Component Lifecycle
+      Management.Our design and development follows operator pattern which extends
+      kubernetes APIs.
+    digest: d7882ec13fd22d617ce06393997dc7de820a514e6c948425afe8003ef86580b2
+    icon: https://avatars.githubusercontent.com/u/85277200
+    keywords:
+    - repository
+    - helm
+    - lifecycle-management
+    maintainers:
+    - name: bjwswang
+      url: https://github.com/bjwswang
+    - name: Abirdcfly
+      url: https://github.com/Abirdcfly
+    - name: 0xff-dev
+      url: https://github.com/0xff-dev
+    name: kubebb-core
+    sources:
+    - https://github.com/kubebb/core
+    type: application
+    urls:
+    - https://github.com/zqq454224016/components/releases/download/kubebb-core-v0.1.4/kubebb-core-v0.1.4.tgz
+    version: v0.1.4
+  minio:
+  - apiVersion: v1
+    appVersion: RELEASE.2023-02-10T18-48-39Z
+    created: "2023-07-24T06:08:33.991217907Z"
+    description: Multi-Cloud Object Storage
+    digest: 4c4a8e645cdc2b3a20598792900515fe33ea3ce3da5d31cac0fd7d1e49a3c60f
+    home: https://min.io
+    icon: https://min.io/resources/img/logo/MINIO_wordmark.png
+    keywords:
+    - minio
+    - storage
+    - object-storage
+    - s3
+    - cluster
+    maintainers:
+    - email: dev@minio.io
+      name: MinIO, Inc
+    name: minio
+    sources:
+    - https://github.com/minio/minio
+    urls:
+    - https://github.com/zqq454224016/components/releases/download/minio-5.0.7/minio-5.0.7.tgz
+    version: 5.0.7
+  tekton-operator:
+  - apiVersion: v2
+    appVersion: v0.64.0
+    created: "2023-07-24T06:08:34.106400363Z"
+    description: A Helm chart to deploy the Tekton Operator and its CRDs
+    digest: a87340d173b1bc91d07118d34643fd00ab94b95cc8e568be6768fbd176050cac
+    maintainers:
+    - email: jack.henschel@cern.ch
+      name: Jack Henschel
+    name: tekton-operator
+    sources:
+    - https://github.com/tektoncd/operator
+    type: application
+    urls:
+    - https://github.com/zqq454224016/components/releases/download/tekton-operator-0.64.0/tekton-operator-0.64.0.tgz
+    version: 0.64.0
+  u4a-component:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2023-07-24T06:08:34.237151248Z"
+    dependencies:
+    - condition: addon-component.enabled
+      name: addon-component
+      repository: ""
+      version: 0.1.0
+    - name: crds
+      repository: ""
+      version: 0.1.0
+    description: A Helm chart for u4a-component
+    digest: c6673170cedc94fa17c72b2a68c331ab6ab94f3d206f655e175255eeb0443911
+    maintainers:
+    - name: nkwangleiGIT
+      url: https://github.com/nkwangleiGIT
+    - name: bjwswang
+      url: https://github.com/bjwswang
+    - name: Abirdcfly
+      url: https://github.com/Abirdcfly
+    - name: 0xff-dev
+      url: https://github.com/0xff-dev
+    name: u4a-component
+    type: application
+    urls:
+    - https://github.com/zqq454224016/components/releases/download/u4a-component-0.1.1/u4a-component-0.1.1.tgz
+    version: 0.1.1
+  weaviate:
+  - apiVersion: v2
+    appVersion: 1.19.1
+    created: "2023-07-24T06:08:34.35791725Z"
+    description: A Helm Chart to run Weaviate with all dependencies
+    digest: 09e806ca691f525c6154c77ca153c33415d42d80b1d03ff7faf8a4c68b0cc0f9
+    home: https://github.com/weaviate/weaviate
+    icon: https://raw.githubusercontent.com/weaviate/weaviate/19de0956c69b66c5552447e84d016f4fe29d12c9/docs/assets/weaviate-logo.png
+    maintainers:
+    - name: weaviate
+      url: https://github.com/weaviate/weaviate
+    name: weaviate
+    type: application
+    urls:
+    - https://github.com/zqq454224016/components/releases/download/weaviate-16.3.0/weaviate-16.3.0.tgz
+    version: 16.3.0
+generated: "2023-07-24T06:08:34.358040151Z"
