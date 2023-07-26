@@ -96,17 +96,13 @@ env:
     AUTH_REALM:
     # auth service used for bearer auth
     AUTH_SERVICE:
-    # username for basic http authentication
-    BASIC_AUTH_USER: admin
-    # password for basic http authentication
-    BASIC_AUTH_PASS: password
   field: {}
     # POD_IP: status.podIP
   secret:
     # username for basic http authentication
-    BASIC_AUTH_USER: 
+    BASIC_AUTH_USER: admin
     # password for basic http authentication
-    BASIC_AUTH_PASS: 
+    BASIC_AUTH_PASS: password
     # GCP service account json file
     GOOGLE_CREDENTIALS_JSON:
     # Redis requirepass server configuration
