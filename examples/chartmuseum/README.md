@@ -10,13 +10,13 @@
     kubectl apply -n kubebbs-sytem -f repos/repository_kubebb.yaml
 ```
 
-## Install chartmuseum Component (kubebb/core doesn't support repository auth yet)
+## Install chartmuseum Component 
 
 
-1. Apply `componentplan.yaml`
+1. Apply `componentplan.yaml` or `componentplan_auth.yaml` support basic_auth
 
 ```shell
-    kubectl apply -f  examples/chartmuseum/componentplan.yaml
+    kubectl apply -f  examples/chartmuseum/componentplan.yaml  or  kubectl apply -f  examples/chartmuseum/componentplan_auth.yaml
 ```
 
 2. Get service for CLUSTER-IP
