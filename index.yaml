@@ -189,6 +189,42 @@ entries:
     urls:
     - https://github.com/zqq454224016/components/releases/download/cluster-component-0.1.1/cluster-component-0.1.1.tgz
     version: 0.1.1
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2023-08-31T07:37:37.011669287Z"
+    dependencies:
+    - condition: cert-manager.enabled
+      name: cert-manager
+      repository: ""
+      version: 0.1.0
+    - condition: metallb.enabled
+      name: metallb
+      repository: ""
+      version: 0.1.0
+    - condition: ingress-nginx.enabled
+      name: ingress-nginx
+      repository: ""
+      version: 4.2.1
+    - condition: openebs.enabled
+      name: openebs
+      repository: ""
+      version: 3.3.1
+    description: A Helm chart for cluster-component
+    digest: 1857fe7ef2fbc2db924635c41d33875361ccb208d28fc8a6114daa26fcc5e25c
+    maintainers:
+    - name: nkwangleiGIT
+      url: https://github.com/nkwangleiGIT
+    - name: bjwswang
+      url: https://github.com/bjwswang
+    - name: Abirdcfly
+      url: https://github.com/Abirdcfly
+    - name: 0xff-dev
+      url: https://github.com/0xff-dev
+    name: cluster-component
+    type: application
+    urls:
+    - https://github.com/zqq454224016/components/releases/download/cluster-component-0.1.0/cluster-component-0.1.0.tgz
+    version: 0.1.0
   fabric-operator:
   - apiVersion: v2
     appVersion: v0.1.0
@@ -300,6 +336,31 @@ entries:
     urls:
     - https://github.com/zqq454224016/components/releases/download/kubebb-core-v0.1.4/kubebb-core-v0.1.4.tgz
     version: v0.1.4
+  - apiVersion: v2
+    created: "2023-08-31T07:37:37.49073945Z"
+    description: Kubebb Core provides core implementations on Component Lifecycle
+      Management.Our design and development follows operator pattern which extends
+      kubernetes APIs.
+    digest: 58077f668d9a52ae6eea0dd95b4960b41c571202b94fe97a2c6fb9b766c098a7
+    icon: https://avatars.githubusercontent.com/u/85277200
+    keywords:
+    - repository
+    - helm
+    - lifecycle-management
+    maintainers:
+    - name: bjwswang
+      url: https://github.com/bjwswang
+    - name: Abirdcfly
+      url: https://github.com/Abirdcfly
+    - name: 0xff-dev
+      url: https://github.com/0xff-dev
+    name: kubebb-core
+    sources:
+    - https://github.com/kubebb/core
+    type: application
+    urls:
+    - https://github.com/zqq454224016/components/releases/download/kubebb-core-v0.1.2/kubebb-core-v0.1.2.tgz
+    version: v0.1.2
   minio:
   - apiVersion: v1
     appVersion: RELEASE.2023-02-10T18-48-39Z
@@ -394,6 +455,33 @@ entries:
     urls:
     - https://github.com/zqq454224016/components/releases/download/u4a-component-0.1.1/u4a-component-0.1.1.tgz
     version: 0.1.1
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2023-08-31T07:37:37.943398029Z"
+    dependencies:
+    - condition: addon-component.enabled
+      name: addon-component
+      repository: ""
+      version: 0.1.0
+    - name: crds
+      repository: ""
+      version: 0.1.0
+    description: A Helm chart for u4a-component
+    digest: 0b163482a20835af22503b21cd3b767f725a8f37e378a30fcce872ab439111b9
+    maintainers:
+    - name: nkwangleiGIT
+      url: https://github.com/nkwangleiGIT
+    - name: bjwswang
+      url: https://github.com/bjwswang
+    - name: Abirdcfly
+      url: https://github.com/Abirdcfly
+    - name: 0xff-dev
+      url: https://github.com/0xff-dev
+    name: u4a-component
+    type: application
+    urls:
+    - https://github.com/zqq454224016/components/releases/download/u4a-component-0.1.0/u4a-component-0.1.0.tgz
+    version: 0.1.0
   weaviate:
   - apiVersion: v2
     appVersion: 1.19.1
@@ -410,4 +498,4 @@ entries:
     urls:
     - https://github.com/zqq454224016/components/releases/download/weaviate-16.3.0/weaviate-16.3.0.tgz
     version: 16.3.0
-generated: "2023-08-03T03:22:17.585136318Z"
+generated: "2023-08-31T07:37:38.105088264Z"
