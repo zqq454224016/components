@@ -135,6 +135,13 @@ spec:
 {{- if .Values.deployment.extraVolumeMounts }}
         {{- toYaml .Values.deployment.extraVolumeMounts | nindent 8 }}
 {{- end }}
+
+{{- if .Values.webhook.enable }}
+        - mountPath: /etc/ssl/certs/
+          name: tls-certs
+          readOnly: true
+{{- end }}
+
 {{- if eq .Values.env.open.STORAGE "local" }}
         - mountPath: {{ .Values.persistence.path }}
           name: storage-volume
@@ -219,4 +226,9 @@ spec:
       - name: public-key
         secret:
           secretName: {{ .Values.bearerAuth.secret.publicKeySecret }}
+{{- end }}
+{{- if .Values.webhook.enable }}
+      - name: tls-certs
+        secret:
+          secretName: {{ .Release.Name }}-cert
 {{- end }}
