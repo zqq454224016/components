@@ -306,6 +306,34 @@ entries:
     - https://github.com/zqq454224016/components/releases/download/ingress-nginx-4.7.0/ingress-nginx-4.7.0.tgz
     version: 4.7.0
   kubebb-core:
+  - annotations:
+      core.kubebb.k8s.com.cn/displayname: 内核
+    apiVersion: v2
+    appVersion: v0.1.4
+    created: "2023-09-12T09:11:45.598007731Z"
+    description: Kubebb Core provides core implementations on Component Lifecycle
+      Management.Our design and development follows operator pattern which extends
+      kubernetes APIs.
+    digest: 0ec417df701affb53fad303e434346070f05c089c7c33e426dc7d49e39a9743f
+    icon: https://avatars.githubusercontent.com/u/85277200
+    keywords:
+    - repository
+    - helm
+    - lifecycle-management
+    maintainers:
+    - name: bjwswang
+      url: https://github.com/bjwswang
+    - name: Abirdcfly
+      url: https://github.com/Abirdcfly
+    - name: 0xff-dev
+      url: https://github.com/0xff-dev
+    name: kubebb-core
+    sources:
+    - https://github.com/kubebb/core
+    type: application
+    urls:
+    - https://github.com/zqq454224016/components/releases/download/kubebb-core-0.1.15/kubebb-core-0.1.15.tgz
+    version: 0.1.15
   - apiVersion: v2
     appVersion: v0.1.2
     created: "2023-08-03T03:22:17.585117818Z"
@@ -520,4 +548,4 @@ entries:
     urls:
     - https://github.com/zqq454224016/components/releases/download/weaviate-16.3.0/weaviate-16.3.0.tgz
     version: 16.3.0
-generated: "2023-09-01T08:49:48.126093646Z"
+generated: "2023-09-12T09:11:45.598039431Z"
