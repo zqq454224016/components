@@ -335,6 +335,32 @@ entries:
     - https://github.com/zqq454224016/components/releases/download/kubebb-core-0.1.15/kubebb-core-0.1.15.tgz
     version: 0.1.15
   - apiVersion: v2
+    appVersion: v0.1.4
+    created: "2023-09-12T10:19:08.025064406Z"
+    description: Kubebb Core provides core implementations on Component Lifecycle
+      Management.Our design and development follows operator pattern which extends
+      kubernetes APIs.
+    digest: aedc511a241b7d4cde8351dddd20e2d91fd6b6ccc39af93ecdb132b8ffe42905
+    icon: https://avatars.githubusercontent.com/u/85277200
+    keywords:
+    - repository
+    - helm
+    - lifecycle-management
+    maintainers:
+    - name: bjwswang
+      url: https://github.com/bjwswang
+    - name: Abirdcfly
+      url: https://github.com/Abirdcfly
+    - name: 0xff-dev
+      url: https://github.com/0xff-dev
+    name: kubebb-core
+    sources:
+    - https://github.com/kubebb/core
+    type: application
+    urls:
+    - https://github.com/zqq454224016/components/releases/download/kubebb-core-v0.1.12/kubebb-core-v0.1.12.tgz
+    version: v0.1.12
+  - apiVersion: v2
     appVersion: v0.1.2
     created: "2023-08-03T03:22:17.585117818Z"
     description: Kubebb Core provides core implementations on Component Lifecycle
@@ -453,6 +479,33 @@ entries:
   u4a-component:
   - apiVersion: v2
     appVersion: 0.1.0
+    created: "2023-09-12T10:19:08.228066872Z"
+    dependencies:
+    - condition: addon-component.enabled
+      name: addon-component
+      repository: ""
+      version: 0.1.0
+    - name: crds
+      repository: ""
+      version: 0.1.1
+    description: A Helm chart for u4a-component
+    digest: f0d578f6f31e331036934d3538b2b9711b7f19064379b57527a2c6e2cb973b34
+    maintainers:
+    - name: nkwangleiGIT
+      url: https://github.com/nkwangleiGIT
+    - name: bjwswang
+      url: https://github.com/bjwswang
+    - name: Abirdcfly
+      url: https://github.com/Abirdcfly
+    - name: 0xff-dev
+      url: https://github.com/0xff-dev
+    name: u4a-component
+    type: application
+    urls:
+    - https://github.com/zqq454224016/components/releases/download/u4a-component-0.1.6/u4a-component-0.1.6.tgz
+    version: 0.1.6
+  - apiVersion: v2
+    appVersion: 0.1.0
     created: "2023-07-26T02:17:55.479417419Z"
     dependencies:
     - condition: addon-component.enabled
@@ -548,4 +601,4 @@ entries:
     urls:
     - https://github.com/zqq454224016/components/releases/download/weaviate-16.3.0/weaviate-16.3.0.tgz
     version: 16.3.0
-generated: "2023-09-12T09:11:45.598039431Z"
+generated: "2023-09-12T10:19:08.228114673Z"
